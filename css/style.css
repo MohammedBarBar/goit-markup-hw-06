@@ -677,7 +677,8 @@ footer address {
   /* text-align: center; */
 }
 .input-icons:hover,
-.input-icons:focus {
+.input-icons:focus,
+.input-icons:focus-within {
   /* border: 1px solid var(--accent-color); */
   color: var(--accent-color);
 }
