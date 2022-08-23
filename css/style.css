@@ -399,6 +399,7 @@ footer {
   padding: 15px 160px 15px 16px;
   margin-right: 12px;
   color: inherit;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #email-footer:hover,
 #email-footer:focus {
@@ -610,8 +611,8 @@ footer address {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   margin: auto;
-  width: 528px;
-  height: 581px;
+  /* width: 528px;
+  height: 581px; */
   position: relative;
   padding: 40px;
 }
@@ -658,6 +659,7 @@ footer address {
   flex-direction: column;
   margin-bottom: 28px;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-form-label:hover,
 .order-form-label:focus,
@@ -677,8 +679,8 @@ footer address {
   border-radius: 4px;
   height: 40px;
   width: 100%;
-
   outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-form-input:hover,
 .order-form-input:focus,
@@ -700,6 +702,7 @@ footer address {
   color: rgba(117, 117, 117, 0.5);
   resize: none;
   outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-form-label-textarear {
   margin-bottom: 20px;
@@ -775,4 +778,45 @@ footer address {
 .icon-in-form {
   fill: currentColor;
   pointer-events: none;
+}
+.agree-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.agree-check .checkmark {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.agree-check .icon-checkbox-label {
+  /* width: 16px;
+  height: 16px; */
+  margin-right: 7px;
+  fill: none;
+  border: 2px solid var(--main-color);
+  border-radius: 2px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agree-check .checkmark:focus + .icon-checkbox-label,
+.agree-check .checkmark:checked:focus + .icon-checkbox-label {
+  outline: 2px solid var(--main-color);
+}
+
+.agree-check .checkmark:checked + .icon-checkbox-label {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+  outline: none;
+}
+.terms {
+  text-decoration: underline;
+  color: var(--accent-color);
 }
