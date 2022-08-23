@@ -696,7 +696,7 @@ footer address {
   border-radius: 4px;
   padding: 12px 16px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -732,14 +732,14 @@ footer address {
   color: #212121;
   fill: currentColor;
 }
-.checkbox-input1 {
+/* .checkbox-input1 {
   opacity: 0;
   visibility: hidden;
 }
 .checkbox-input1.is-checked {
   opacity: 1;
   visibility: visible;
-}
+} */
 /* .checkbox-input:hover,
 .checkbox-input:focus,
 .checkbox-input:checked {
@@ -793,8 +793,8 @@ footer address {
 }
 
 .agree-check .icon-checkbox-label {
-  /* width: 16px;
-  height: 16px; */
+  width: 16px;
+  height: 16px;
   margin-right: 7px;
   fill: none;
   border: 2px solid var(--main-color);
@@ -813,7 +813,7 @@ footer address {
 .agree-check .checkmark:checked + .icon-checkbox-label {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-  fill: var(--accent-color);
+  fill: var(--color-buttons);
   outline: none;
 }
 .terms {
